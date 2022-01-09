@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EEEFF1;
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+#mainNav{
+    background-color: transparent !important;
+    font-weight: 100;
+}
+
+
+#mainNav .navbar-brand {
+    color: rgba(17, 17, 17, 0.7);
+    font-weight: 400;
+}
+
+#mainNav .nav-link {
+    font-weight: 300;
+}
+/* Landing Content */
+
+#landing-content {
+    height: 100vh;
+    padding-top: 15vh;
+    color: rgba(17, 17, 17, 0.7);    
+    background-image: url("https://images.pexels.com/photos/4040675/pexels-photo-4040675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;        
+    background-repeat:   no-repeat;
+    background-position: center center;        
+    background-attachment:fixed;
+}
+
+#landing-content h3{
+    /* font-weight: 600; */
+    /* letter-spacing: 0.rem; */
+    /* font-family: 'Berkshire Swash', cursive; */
+    /* font-family: 'Merienda', cursive; */
+    /* font-family: 'Merienda One', cursive; */
+    font-family: 'Petit Formal Script', cursive;
+    /* text-shadow: 0 1px 5px rgba(0,0,0,0.2); */
+
+}
+
+#landing-content .sub-title{
+    font-size: 2rem;
+    font-weight: 300;
+    /* text-shadow: 0 1px 5px rgba(0,0,0,0.2); */
+}
+
+#landing-content img {
+    width: 8vw;
+    border-radius: 30%;
+}
+
+#portfolio-scroll{
+     background-color: transparent !important;
+    border: none;
+    position: absolute;
+    bottom: 0;     
+}
+
+#portfolio-scroll:focus {
+    border: none;
+}
+
+#portfolio-scroll:hover{
+    scale:2rem;
+}
+
+  #portfolio {
+      height: 100vh;
+  }
