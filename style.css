@@ -90,6 +90,10 @@ body {
   margin-left: 1rem;
 }
 
+.contact i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
 @media screen and (max-width: 900px) {
   #landing-content .sub-title {
     width: 90%;
