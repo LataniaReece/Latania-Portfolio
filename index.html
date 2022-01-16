@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -75,7 +76,10 @@
       <!-- Main Content -->
       <section class="main-content mx-4 pb-5">
         <!-- 1 -->
-        <div class="row text-center align-items-center mt-5">
+        <div
+          class="row text-center align-items-center mt-5"
+          data-aos="fade-left"
+        >
           <div class="col-lg-6 order-2 order-lg-1">
             <a href="https://brightfieldsinc.netlify.app/" target="_blank"
               ><img src="images/brightfields.JPG" alt="" class="img-fluid"
@@ -84,7 +88,7 @@
           <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <h2>BrightFields: Frontend Site (HTML, CSS, JS, SCSS)</h2>
+                <h2>BrightFields: Frontend Site (HTML, CSS, JS, SASS/SCSS)</h2>
                 <p>
                   <a href="https://brightfieldsinc.netlify.app/" target="_blank"
                     >View Site</a
@@ -98,7 +102,7 @@
                   A landing page for a fictitious consulting company with
                   responsive design. <br />
                   <br />
-                  Uses html, css, scss, and vanilla js (no libraries) with
+                  Uses html, css, sass/scss, and vanilla js (no libraries) with
                   google fonts and fontawesome.
                 </p>
               </div>
@@ -106,7 +110,10 @@
           </div>
         </div>
         <!-- 2 -->
-        <div class="row text-center align-items-center mt-5">
+        <div
+          class="row text-center align-items-center mt-5"
+          data-aos="fade-right"
+        >
           <div class="col-lg-6 order-2">
             <a href="https://techyblog2021.herokuapp.com/" target="_blank"
               ><img src="images/techyblogs.JPG" alt="" class="img-fluid"
@@ -138,7 +145,10 @@
           </div>
         </div>
         <!-- 3 -->
-        <div class="row text-center align-items-center mt-5">
+        <div
+          class="row text-center align-items-center mt-5"
+          data-aos="fade-left"
+        >
           <div class="col-lg-6 order-2 order-lg-1">
             <a href="http://shopmart2021.herokuapp.com/" target="_blank"
               ><img src="images/shopMart1.JPG" alt="" class="img-fluid"
@@ -174,7 +184,10 @@
         </div>
 
         <!-- 4 -->
-        <div class="row text-center align-items-center mt-5">
+        <div
+          class="row text-center align-items-center mt-5"
+          data-aos="fade-right"
+        >
           <div class="col-lg-6 order-2">
             <a href="https://pokerblog.netlify.app/" target="_blank"
               ><img src="images/pokerblog.JPG" alt="" class="img-fluid"
@@ -206,30 +219,43 @@
     </div>
 
     <footer id="contact">
-      <h3>Latania Reece</h3>
-      <p>For more detail on my work feel free to click a link below</p>
-      <p>Email: latania.reece@outlook.com</p>
-      <ul class="footer-nav">
-        <li>
-          <a href="https://github.com/LataniaReece" target="_blank">
-            <i class="fab fa-github-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/latania-reece/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://drive.google.com/file/d/1akILtmKA7pvzlNQfGDtTyIvt35lZF1-J/view?usp=sharing"
-            target="_blank"
-          >
-            <i class="fas fa-file-pdf"></i
-          ></a>
-        </li>
-      </ul>
+      <div class="footer-container">
+        <h3>Latania Reece</h3>
+        <p>For more detail on my work feel free to click a link below</p>
+        <p>Email: latania.reece@outlook.com</p>
+        <ul class="footer-nav">
+          <li>
+            <a href="https://github.com/LataniaReece" target="_blank">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/latania-reece/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1akILtmKA7pvzlNQfGDtTyIvt35lZF1-J/view?usp=sharing"
+              target="_blank"
+            >
+              <i class="fas fa-file-pdf"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: 'ease',
+        once: true,
+      });
+    </script>
   </body>
 
   <script

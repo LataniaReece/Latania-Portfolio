@@ -19,6 +19,7 @@ body {
 #mainNav {
   background-color: transparent !important;
   font-weight: 100;
+  animation: tranisitionIn 0.75s ease-in;
 }
 
 #mainNav .navbar-brand {
@@ -29,6 +30,18 @@ body {
 
 #mainNav .nav-link {
   font-weight: 300;
+}
+
+@keyframes tranisitionIn {
+  from {
+    /* opacity: 0; */
+    transform: translateY(-50px);
+  }
+
+  to {
+    /* opacity: 1; */
+    transform: translateY(0);
+  }
 }
 /* Landing Content */
 
@@ -47,11 +60,13 @@ body {
   font-family: 'Petit Formal Script', cursive;
   font-size: 6rem;
   letter-spacing: 0.3rem;
+  animation: animRight 1s ease-in;
 }
 
 #landing-content .sub-title {
   font-size: 2rem;
   font-weight: 300;
+  animation: animLeft 1s ease-in;
 }
 
 #landing-content img {
@@ -63,15 +78,13 @@ body {
   font-size: 70px;
 }
 
-#portfolio {
-  width: 90%;
-  margin: 0 auto;
-}
-
 #portfolio-scroll {
   background-color: transparent !important;
   border: none;
   margin-top: 5rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  /* animation-delay: 1s; */
 }
 
 #portfolio-scroll:focus {
@@ -82,9 +95,51 @@ body {
   scale: 2rem;
 }
 
+@keyframes animRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    left: translateX(0%);
+  }
+}
+@keyframes animLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    left: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  width: 90%;
+  margin: 0 auto;
+}
+
 footer {
   background-color: #00100b;
   color: white;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +148,7 @@ footer {
   text-align: center;
 }
 
-footer p {
+.footer-container p {
   margin-bottom: 0.2rem;
 }
 
