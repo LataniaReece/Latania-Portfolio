@@ -32,6 +32,21 @@ body {
   font-weight: 300;
 }
 
+#projects-links {
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid transparent;
+}
+
+#projects-link:hover {
+  color: rgb(10, 10, 10);
+  border-bottom: 2px solid rgb(10, 10, 10);
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: rgb(10, 10, 10);
+}
+
 @keyframes tranisitionIn {
   from {
     /* opacity: 0; */
@@ -78,21 +93,26 @@ body {
   font-size: 70px;
 }
 
-#portfolio-scroll {
-  background-color: transparent !important;
-  border: none;
-  margin-top: 5rem;
+#projects-scroll {
+  border-radius: 5rem;
+  margin-top: 2rem;
   opacity: 0;
-  animation: fadeIn 2s ease-in forwards;
-  /* animation-delay: 1s; */
+  animation: fadeIn 1s ease-in forwards;
+  padding: 0.85 1.2rem;
 }
 
-#portfolio-scroll:focus {
+#projects-scroll p {
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.1rem;
+}
+
+#projects-scroll:focus {
   border: none;
 }
 
-#portfolio-scroll:hover {
-  scale: 2rem;
+#projects-scroll:hover {
+  background-color: white;
+  color: rgb(10, 10, 10);
 }
 
 @keyframes animRight {
@@ -123,13 +143,13 @@ body {
   }
   to {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
-/* PORTFOLIO */
+/* projects */
 
-#portfolio {
+#projects {
   width: 90%;
   margin: 0 auto;
 }

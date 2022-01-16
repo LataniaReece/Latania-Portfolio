@@ -1,5 +1,5 @@
-document.getElementById('portfolio-scroll').addEventListener('click', () => {
-  document.getElementById('portfolio').scrollIntoView({
+document.getElementById('projects-scroll').addEventListener('click', () => {
+  document.getElementById('projects').scrollIntoView({
     behavior: 'smooth',
   });
 });
