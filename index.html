@@ -4,32 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latania Reece Portfolio</title>
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -60,18 +49,10 @@
             <a class="nav-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item mr-3">
-            <a
-              id
-              class="nav-link"
-              href="http://127.0.0.1:5500/#portfolio"
-              id="portfolio-link"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav-item mr-3">
-            <a class="nav-link" href="/contact.html">Contact</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
         </ul>
+        <button type="button" class="btn btn-dark contact-btn">Contact</button>
       </div>
     </nav>
 
@@ -79,8 +60,8 @@
     <div id="landing-content" class="text-center">
       <h3 class="my-title display-1">Latania Reece</h3>
       <p class="sub-title lead">
-        Full Stack Web Developer Eager To Learn More and Work On Amazing
-        Life-Changing Projects
+        Web Developer Eager To Learn More and Work On Amazing Life-Changing
+        Projects
       </p>
       <button id="portfolio-scroll" type="button" class="btn btn-light">
         <i class="fas fa-chevron-down"></i>
@@ -96,27 +77,29 @@
         <!-- 1 -->
         <div class="row text-center align-items-center mt-5">
           <div class="col-lg-6 order-2 order-lg-1">
-            <img src="images/shopMart1.JPG" alt="" class="img-fluid" />
+            <a href="https://brightfieldsinc.netlify.app/" target="_blank"
+              ><img src="images/brightfields.JPG" alt="" class="img-fluid"
+            /></a>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <h2>ShopMart: MERN Stack Ecommerce</h2>
+                <h2>BrightFields: Frontend Site (HTML, CSS, JS, SCSS)</h2>
                 <p>
-                  <a href="http://shopmart2021.herokuapp.com/" target="_blank"
+                  <a href="https://brightfieldsinc.netlify.app/" target="_blank"
                     >View Site</a
                   >/<a
-                    href="https://github.com/LataniaReece/shopmart2021"
+                    href="https://github.com/LataniaReece/BrightFields-Inc"
                     target="_blank"
                     >View Github</a
                   >
                 </p>
                 <p>
-                  Responsive MERN Fullstack application. REST API app with JSON.
-                  Used cryptojs and jsonwebtoken for authentication. React
-                  Frontend with Material UI, react-redux. StripeJS used for
-                  payment library. Firebase used for image storage. Use of
-                  Postman to develop/debug API.
+                  A landing page for a fictitious consulting company with
+                  responsive design. <br />
+                  <br />
+                  Uses html, css, scss, and vanilla js (no libraries) with
+                  google fonts and fontawesome.
                 </p>
               </div>
             </div>
@@ -125,7 +108,9 @@
         <!-- 2 -->
         <div class="row text-center align-items-center mt-5">
           <div class="col-lg-6 order-2">
-            <img src="images/techyblogs.JPG" alt="" class="img-fluid" />
+            <a href="https://techyblog2021.herokuapp.com/" target="_blank"
+              ><img src="images/techyblogs.JPG" alt="" class="img-fluid"
+            /></a>
           </div>
           <div class="col-lg-6 order-1 mb-4 mb-lg-0">
             <div class="row justify-content-center">
@@ -141,46 +126,57 @@
                   >
                 </p>
                 <p>
-                  Responsive MERN Fullstack application. REST API app with JSON.
-                  Express sessions, sanitize-html, joi used in backend. Used
-                  passport library for authentication. React Frontend with
-                  Bootstrap, react-redux. Multer and Cloudinary used for image
-                  storage. Use of Postman to develop/debug API.
+                  A template tech blog app using the React, Express, Mongo and
+                  Nodejs. This app showcases my knowledge of the fullstack side
+                  of web development. <br />
+                  <br />
+                  Uses bootstrap, and redux in the frontend with REST APIs and
+                  authentication in the backend.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- 3-->
+        <!-- 3 -->
         <div class="row text-center align-items-center mt-5">
           <div class="col-lg-6 order-2 order-lg-1">
-            <img src="images/coffeeshop.JPG" alt="" class="img-fluid" />
+            <a href="http://shopmart2021.herokuapp.com/" target="_blank"
+              ><img src="images/shopMart1.JPG" alt="" class="img-fluid"
+            /></a>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <h2>CoffeeShop: FrontEnd Site</h2>
+                <h2>ShopMart: MERN Stack Ecommerce</h2>
                 <p>
-                  <a href="https://coffeeshop2021.netlify.app/" target="_blank"
+                  <a href="http://shopmart2021.herokuapp.com/" target="_blank"
                     >View Site</a
                   >/<a
-                    href="https://github.com/LataniaReece/CoffeeShop2021"
+                    href="https://github.com/LataniaReece/shopmart2021"
                     target="_blank"
                     >View Github</a
                   >
                 </p>
                 <p>
-                  Basic website with HTML, CSS, and JS. Fontawesome used for
-                  icons. Google fonts.
+                  This ecommerce MERN project is a small scale clothing site.
+                  Created with React, Express, Nodejs and Mongo this project
+                  showcases my knowledge of the fullstack side of web
+                  development. <br />
+                  <br />
+                  Also uses redux and REST APIs and has demonstrations of
+                  authentication.
                 </p>
               </div>
             </div>
           </div>
         </div>
+
         <!-- 4 -->
         <div class="row text-center align-items-center mt-5">
           <div class="col-lg-6 order-2">
-            <img src="images/pokerblog.JPG" alt="" class="img-fluid" />
+            <a href="https://pokerblog.netlify.app/" target="_blank"
+              ><img src="images/pokerblog.JPG" alt="" class="img-fluid"
+            /></a>
           </div>
           <div class="col-lg-6 order-1 mb-4 mb-lg-0">
             <div class="row justify-content-center">
@@ -196,7 +192,9 @@
                   >
                 </p>
                 <p>
-                  Basic website with HTML, CSS, and JS. Bootstrap. Google fonts.
+                  One of my first projects, a poker blog site template created
+                  for a family member with his guidance of design. Uses HTML,
+                  CSS, JS and Bootstrap.
                 </p>
               </div>
             </div>
@@ -204,7 +202,34 @@
         </div>
       </section>
     </div>
+
+    <footer id="contact">
+      <h3>Latania Reece</h3>
+      <p>For more detail on my work feel free to click a link below</p>
+      <p>Email: latania.reece@outlook.com</p>
+      <ul class="footer-nav">
+        <li>
+          <a href="https://github.com/LataniaReece" target="_blank">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/latania-reece/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1akILtmKA7pvzlNQfGDtTyIvt35lZF1-J/view?usp=sharing"
+            target="_blank"
+          >
+            <i class="fas fa-file-pdf"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
   </body>
+
   <script
     src="https://kit.fontawesome.com/0c12c57d23.js"
     crossorigin="anonymous"

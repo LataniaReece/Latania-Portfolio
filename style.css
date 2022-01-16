@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: #eeeff1;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-width: 330px;
 }
 
@@ -23,7 +23,8 @@ body {
 
 #mainNav .navbar-brand {
   color: rgba(17, 17, 17, 0.7);
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 
 #mainNav .nav-link {
@@ -44,6 +45,8 @@ body {
 
 #landing-content h3 {
   font-family: 'Petit Formal Script', cursive;
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
 }
 
 #landing-content .sub-title {
@@ -61,7 +64,6 @@ body {
 }
 
 #portfolio {
-  height: 100vh;
   width: 90%;
   margin: 0 auto;
 }
@@ -69,7 +71,7 @@ body {
 #portfolio-scroll {
   background-color: transparent !important;
   border: none;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 #portfolio-scroll:focus {
@@ -80,20 +82,40 @@ body {
   scale: 2rem;
 }
 
-.contact {
-  display: grid;
+footer {
+  background-color: #00100b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  padding: 2.5rem 0;
+  text-align: center;
 }
 
-.contact > p {
-  margin-left: 1rem;
+footer p {
+  margin-bottom: 0.2rem;
 }
 
-.contact i {
+.footer-nav {
+  margin-top: 1rem;
+  display: flex;
+  list-style: none;
+}
+
+.footer-nav i {
   font-size: 1.5rem;
-  margin-right: 1rem;
+  margin: 0 1.5rem;
+  color: white;
+  background: #5688c7;
+  border-radius: 50%;
+  padding: 0.45rem 0.65rem;
+  border: 2px solid #545d5d;
+  box-shadow: 0px 1px #fff;
+  box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.55),
+    0 0px 20px 0px rgba(0, 0, 0, 0.55);
 }
+
 @media screen and (max-width: 900px) {
   #landing-content .sub-title {
     width: 90%;
@@ -102,7 +124,7 @@ body {
 }
 
 @media screen and (max-width: 570px) {
-  .my-title {
+  #landing-content h3 {
     font-size: 60px;
     width: 90%;
     margin: 0 auto;
@@ -111,17 +133,14 @@ body {
   #landing-content .sub-title {
     font-size: 1.5rem;
   }
+
+  footer {
+    padding: 0 2rem;
+  }
 }
 
 @media screen and (max-width: 426px) {
   #landing-content {
     padding-top: 8vh;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .contact {
-    width: 90%;
-    margin: 0 auto;
   }
 }
