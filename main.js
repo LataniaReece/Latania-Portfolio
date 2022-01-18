@@ -1,13 +1,16 @@
+// REset to top of page before refreshing/loading
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
   document.body.style.opacity = '0';
 };
 
+// Preloader
 const loader = document.getElementById('preloader');
 window.addEventListener('load', () => {
   loader.style.display = 'none';
 });
 
+// GSAP Animation
 const tl = gsap.timeline({
   defaults: { ease: 'power1.out' },
   onComplete: allowScroll,
@@ -22,6 +25,21 @@ tl.to('.slider', { y: '-200%', duration: 1.15, delay: 0.5 });
 tl.to('.intro', { y: '-200%', duration: 1 }, '-=1');
 tl.fromTo('nav', { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo('.big-text', { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
+
+// turn shapes animation on/off based on scrolling
+window.addEventListener('scroll', () => {
+  const shapesEl = document.querySelector('.shape');
+  const windowPosition = window.scrollY < 40;
+
+  if (!windowPosition) {
+    console.log('hello');
+    shapesEl.classList.add('scrolling-fade-out');
+    shapesEl.classList.remove('scrolling-fade-in');
+  } else {
+    shapesEl.classList.remove('scrolling-fade-out');
+    shapesEl.classList.add('scrolling-fade-in');
+  }
+});
 
 const hamburgerEl = document.querySelector('.hamburger');
 const navListContainerEl = document.querySelector('.nav-list-container');

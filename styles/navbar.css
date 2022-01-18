@@ -6,7 +6,7 @@ nav {
   color: var(--primary-light-text-color);
   opacity: 0;
   animation: headerFadeIn 0.4s ease-in 3s forwards;
-  z-index: 50;
+  z-index: 100;
 }
 
 nav .logo {
