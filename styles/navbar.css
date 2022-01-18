@@ -1,0 +1,169 @@
+nav {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-light-text-color);
+  opacity: 0;
+  animation: headerFadeIn 0.4s ease-in 3s forwards;
+  z-index: 50;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  color: var(--primary-light-text-color);
+  font-weight: 200;
+}
+
+.nav-list-container {
+  visibility: visible;
+  animation: none;
+}
+
+.nav-list ul {
+  display: flex;
+}
+
+.nav-list ul li {
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-list ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-light-text-color);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease-in;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: var(--primary-light-text-color);
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.nav-list ul li:hover::after {
+  transform: scaleX(1);
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  display: none;
+  color: var(--primary-light-text-color);
+  align-self: center;
+  cursor: pointer;
+}
+
+.faded {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    animation: none;
+    opacity: 1;
+    padding: 1.4rem 2rem;
+  }
+  .nav-list-container {
+    position: absolute;
+    visibility: hidden;
+    top: 6rem;
+    right: 0%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .mobile-menu {
+    display: flex;
+    position: absolute;
+    top: 4.5rem;
+    left: 6%;
+    width: 88%;
+
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+
+    padding: 2rem 0;
+  }
+
+  .nav-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .nav-list ul li {
+    padding: 1rem 1.2rem;
+    width: 92%;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .nav-list ul li::after {
+    content: none;
+  }
+
+  .nav-list ul li:hover,
+  .nav-list ul li:hover a {
+    border-radius: 0;
+    background-color: var(--dark-secondary-color);
+    color: white;
+  }
+
+  .nav-list ul li a {
+    font-weight: 300;
+    display: inline-block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--primary-background-color);
+    width: 100%;
+  }
+  .fade-in {
+    animation: fade-in 0.35s ease-in forwards;
+  }
+}
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
