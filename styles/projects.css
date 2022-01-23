@@ -128,7 +128,7 @@
   width: calc(100% + 1.3px);
   height: 192px;
   transform: rotateY(180deg);
-  margin-bottom: -2px;
+  margin: -10px 0;
 }
 
 .projects-tilt .shape-fill {
@@ -151,10 +151,6 @@
   .project-wrapper,
   .project-wrapper.switch-flex {
     flex-direction: column;
-  }
-
-  #projects [data-aos] {
-    transform: translate(0) !important;
   }
 
   .project-text.left,

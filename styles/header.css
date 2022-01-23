@@ -10,9 +10,9 @@ header .content {
   position: absolute;
   top: 50%;
   left: 8%;
-  transform: translateY(-50%);
+  transform: translateX(-100%) translateY(-50%);
   opacity: 0;
-  animation: headerContentFadeIn 0.9s ease-in 3s forwards;
+  animation: headerContentAnimation 1s ease-in 3s forwards;
 }
 
 header .content small {
@@ -23,11 +23,36 @@ header .content small {
 header .content h1 {
   font-size: 8.5rem;
   font-weight: 100;
+  line-height: 175px;
 }
 
 header .content p {
   font-size: 1.5rem;
   font-weight: 200;
+}
+header .content .social-nav {
+  margin-bottom: 1.5rem;
+}
+header .content .social-nav i {
+  margin: 0 1.4rem;
+  background: rgb(56, 56, 56);
+  border: none;
+  box-shadow: 0px 1px #fff;
+  box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.363),
+    0 0px 20px 0px rgba(0, 0, 0, 0.363);
+  transition: all 0.15s ease-in;
+}
+
+header .content .social-nav i:first-of-type {
+  margin-left: 0;
+}
+
+header .content .social-nav i:hover {
+  background-color: var(--dark-secondary-color);
+  transform: rotate(30deg) translateY(10%);
+  box-shadow: 0 2px 10px -1px rgba(141, 141, 141, 0.363),
+    0 0px 20px 0px rgba(141, 141, 141, 0.363);
+  transition: all 0.15s ease-in;
 }
 
 header .cta {
@@ -36,34 +61,22 @@ header .cta {
 
 header .cta .btn {
   position: relative;
+  padding: 0.75rem 1.2rem;
   margin-right: 1rem;
   font-weight: 300;
-
-  overflow: hidden;
+  font-size: 1.2rem;
   background-color: transparent;
-  color: var(--primary-dark-text-color);
+  color: white;
   border-radius: 40px;
-  box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
-  transition: transform 0.3s ease, box 0.3s ease;
-}
+  border: 2px solid white;
 
-header .cta .btn::after {
-  content: '';
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: -50px;
-  left: -100px;
-  background-color: var(--secondary-color);
-  background-image: linear-gradient(225deg, #fff 0%, #fff 50%, #7e3c3d 100%);
-  z-index: -1;
-  transition: transform 0.5s ease;
+  transition: all 0.2s ease-in;
 }
 
 header .cta .btn:hover {
-  color: #fff;
+  background-color: var(--dark-secondary-color);
+  color: white;
   transform: translate(0, -6px);
-  box-shadow: 7px -7px 20px 0 #d3d3d3, -7px 7px 20px 0 #c0c0c0;
 }
 
 header .cta .btn:hover::after {
@@ -124,7 +137,7 @@ header .cta .btn:hover::after {
   width: calc(100% + 1.3px);
   height: 192px;
   transform: rotateY(180deg);
-  margin-top: -5px;
+  margin: -10px 0;
 }
 
 .header-tilt .shape-fill {
@@ -139,24 +152,29 @@ header .cta .btn:hover::after {
   }
 }
 
-@keyframes headerContentFadeIn {
+@keyframes headerContentAnimation {
   0% {
     opacity: 0;
-    transform: scale(0.5) translateY(-50%);
+    transform: translateX(-100%) translateY(-50%);
   }
   50% {
     opacity: 0.5;
-    transform: scale(1.15) translateY(-50%);
+    transform: translateX(8%) translateY(-50%);
   }
   100% {
     opacity: 1;
-    transform: scale(1) translateY(-50%);
+    transform: translateX(0%) translateY(-50%);
   }
 }
 
 @media screen and (max-width: 768px) {
+  header .content {
+    top: 55%;
+  }
   header .content h1 {
-    font-size: 4.8rem;
+    margin-top: 0.5rem;
+    font-size: 4.5rem;
+    line-height: 80px;
   }
 
   header .content small {
@@ -165,6 +183,16 @@ header .cta .btn:hover::after {
 
   header .content p {
     font-size: 1.15rem;
+    padding-right: 1rem;
+  }
+  header .cta .btn {
+    padding: 0.55rem 0.85rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header .content {
+    top: 50%;
   }
 }
 

@@ -24,18 +24,8 @@
 
     <div id="preloader"></div>
     <!-- HEADER START-->
+    <div id="overlay"></div>
     <header>
-      <div class="shape">
-        <img class="shape1" src="images/circle.svg" alt="">
-        <img class="shape2" src="images/circle.svg" alt="">
-        <img class="shape3" src="images/circle.svg" alt="">
-        <img class="shape4" src="images/circle.svg" alt="">
-        <img class="shape5" src="images/circle.svg" alt="">
-        <img class="shape6" src="images/circle.svg" alt="">
-        <img class="shape7" src="images/circle.svg" alt="">
-        <img class="shape8" src="images/circle.svg" alt="">
-        <img class="shape9" src="images/circle.svg" alt="">
-      </div>
       <!-- NAVBAR START-->
       <nav>
         <h2 class="logo">latania reece</h2>
@@ -47,21 +37,46 @@
               <li class="contact-link"><a href="#">Contact</a></li>
             </ul>
           </div>
+          <i class="fas fa-times close"></i>
         </div>
         <i class="fas fa-bars hamburger"></i>
       </nav>
       <!-- NAVBAR END-->
       <!-- HEADER MAIN CONTENT START-->
       <div class="content">
+        <ul class="social-nav">
+          <li>
+            <a href="https://github.com/LataniaReece" target="_blank">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+          <li>
+            <a
+            href="https://www.linkedin.com/in/latania-reece/"
+            target="_blank"
+            >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a
+          href="https://drive.google.com/file/d/1akILtmKA7pvzlNQfGDtTyIvt35lZF1-J/view?usp=sharing"
+          target="_blank"
+          >
+          <i class="fas fa-file-pdf"></i
+            ></a>
+          </li>
+        </ul>
         <small>Hi, I am </small>
         <h1>latania reece</h1>
         <p>
-          Web developer ready to assist in building life-changing projects
+          Web developer ready to build remarkable and life-changing projects
         </p>
         <div class="cta">
           <div class="btn projects-link">See Projects</div>
           <div class="btn about-link">About Me</div>
         </div>
+      
       </div>
 
       <!-- HEADER MAIN CONTENT END-->
@@ -98,26 +113,26 @@
       <!-- 1 -->
       <div class="project-wrapper right">
         <div class="project-img" data-aos="slide-right">
-          <a href="https://brightfieldsinc.netlify.app/" target="_blank"
-            ><img src="images/brightfields.JPG" alt="brightfields"
+          <a href="https://brightdreams.netlify.app/" target="_blank"
+            ><img src="images/brightdreams.JPG" alt="brightfields"
           /></a>
         </div>
         <div class="project-text" data-aos="slide-left">
           <h4>personal project</h4>
-          <h2>BrightFields Inc</h2>
+          <h2>BrightDreams Inc</h2>
           <p class="links">
-            <a href="https://brightfieldsinc.netlify.app/" target="_blank"
+            <a href="https://brightdreams.netlify.app/" target="_blank"
               >View Live</a
             >/<a
-              href="https://github.com/LataniaReece/BrightFields-Inc"
+              href="https://github.com/LataniaReece/BrightDreams"
               target="_blank"
               >View Github</a
             >
           </p>
           <p class="description">
-            A landing page for a fictitious consulting company with responsive
-            design.<br /><br />
-            Uses html, css, sass/scss, and vanilla js (no libraries) with google
+            A landing page for a fictitious company with responsive
+            design and animations.<br /><br />
+            Uses html, css, sass/scss, js, animate on scroll library with google
             fonts and fontawesome.
           </p>
           <p class="tags">
@@ -146,12 +161,12 @@
             >
           </p>
           <p class="description">
-            A template tech blog app using the React, Express, Mongo and Nodejs.
+            A MERN tech blog app using React, Express, Mongo and Nodejs.
             This app showcases my knowledge of the fullstack side of web
             development. <br />
             <br />
-            Uses bootstrap, and redux in the frontend with REST APIs and
-            authentication in the backend.
+            Uses bootstrap, and redux in the frontend, REST APIs and
+            authentication in the backend and more. 
           </p>
           <p class="tags">
             <span>javascript</span>
@@ -183,10 +198,10 @@
           </p>
           <p class="description">
             Small scale clothing site. Created with React, Express, Nodejs and
-            Mongo this project showcases my knowledge of the fullstack side of
+            Mongo. This project showcases my knowledge of the fullstack side of
             web development. <br />
             <br />
-            Also uses redux and REST APIs and has authentication.
+            Also uses redux, REST APIs, authentication, Material UI and more. 
           </p>
           <p class="tags">
             <span>javascript</span>
@@ -223,13 +238,12 @@
           </p>
           <p class="tags">
             <span>html</span>
-            <span>cs</span>
+            <span>css</span>
             <span>javascript</span>
             <span>bootstrap</span>
           </p>
         </div>
       </div>
-    </div>
     <div class="header-tilt">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
@@ -238,35 +252,34 @@
 </section>
         <!-- ABOUT START-->
     <section id="about">
-      <h3 data-aos="flip-up">About<span>Me</span></h3>
+      <h3>About<span>Me</span></h3>
       <div class="content">
-        <p data-aos="zoom-in">Born and raised in Boston, Massachusetts with my huge family (8 chaotic yet lovable siblings, 2 amazing parents). I originally was pursuing a career in medicine, pediatric neurology, but frankly I wasn't happy and I was in it for the wrong reasons. After deciding to pass on a medical career, I was a bit lost. I had no idea what to do as a career....and then eventually I discovered coding. </p>
-        <p data-aos="zoom-in">Since my introduction to web development over two years ago, I've never been more determined to push myself. I finally found an engaging challenge that motivates me to consistently learn and develop my skills to create exceptional products. Not only has coding helped me find my ideal career choice but it's taught me that if I put my mind to it, I can honestly do anything. I've never been more passionate about a career and each day this passion grows.</p>
+        <p> I'm a web developer currently located in Boston, Massachusetts.  I graduated from Boston University with a bachelors degree in Biology. Presently I am a Clinical Research Specialist at Boston Children's Hospital, however, after learning web development for over two years now, I'm ready to join a collaborative team and begin working on life-changing projects. Each day I grow passionate about web/software development and I can't wait to grow further with this career.</p>
 
-        <p data-aos="zoom-in">
+        <p>
           Some technologies I've worked with: 
-          <div class="tech-col" data-aos="zoom-in">
+          <div class="tech-col">
             <ul>
               <li>HTML/CSS/JS</li>
               <li>React</li>
               <li>Node.js</li>
+              <li>Express</li>
             </ul>
             <ul>
+              <li>Mongo</li>
+              <li>JSON/APIs</li>
               <li>Sass/SCSS</li>
-              <li>Bootstrap</li>
-              <li>Material UI</li>
+              <li>Bootstrap/Material UI</li>
             </ul>
           </div>  
-        </p>       
-        <p data-aos="zoom-in">Outside of coding, if I ever have free time lol, I love reading, hanging out with family and friends, playing video games, or scrolling through pinterests or youtube for more (possibly unnecessary haha) apartment decor ideas. 
-        </p>
+        </p>  
         </div>
-        <a href ="#" class="info projects-link" data-aos="fade">
+        <a href ="#" class="info projects-link">
           <i class="fas fa-chevron-up"></i>
-          <h4>Scroll up for projects</h4>
+          <h4>projects</h4>
         </a>
-        <a href="#"class="info contact-link" data-aos="fade">
-          <h4>Scroll down to contact</h4>
+        <a href="#"class="info contact-link">
+          <h4>contact</h4>
           <i class="fas fa-chevron-down"></i>
         </a>
           </section>        
@@ -275,13 +288,13 @@
 
 
         <!-- FOOTER START-->
-    <footer id="contact" data-aos="slide-right">
+    <footer id="contact">
       <div class="footer-container">
         <div class="title"><h3><span>Contact</span>Me</h3></div>
       <div class="content">
       <h4 class="footer-logo">latania reece - <span>web developer</span></h4>
       <p>Email: latania.reece@outlook.com</p>
-      <ul class="footer-nav">
+      <ul class="social-nav">
         <li>
           <a href="https://github.com/LataniaReece" target="_blank">
             <i class="fab fa-github-square"></i>
@@ -315,7 +328,6 @@
       AOS.init({
         duration: 500,
         easing: 'ease-in',
-        disable: 'tablet',
       });
     </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
