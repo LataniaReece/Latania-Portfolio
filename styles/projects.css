@@ -78,6 +78,10 @@
   z-index: 4;
 }
 
+.project-text .description span {
+  font-size: 0.75rem;
+}
+
 .project-text .tags span {
   margin-right: 1rem;
   text-transform: uppercase;
